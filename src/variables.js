@@ -27,6 +27,10 @@ let InputHintTimer;
 const InputHintTimertineout = 1000;
 
 document.addEventListener('DOMContentLoaded',()=>{
+   const mediaQuery = window.matchMedia('(max-width: 767px)');
+   handleMediaQueryChange(mediaQuery);
+   mediaQuery.addEventListener('change', handleMediaQueryChange);
+
    initializeSearchData();
    basketButtonsInitialiating();
    existingBasket = JSON.parse(localStorage.getItem('basket')) || {};
@@ -39,3 +43,11 @@ window.addEventListener('storage', (e) => {
     }
 });
 
+
+  function handleMediaQueryChange(e) {
+    if (e.matches) {
+      sidebar.classList.add('sidebar--close');
+    } else {
+      sidebar.classList.remove('sidebar--close');
+    }
+  }
