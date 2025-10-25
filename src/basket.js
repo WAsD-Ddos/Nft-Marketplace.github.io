@@ -69,7 +69,7 @@ function createBasketCard(product) {
     card.innerHTML = `
        <div class="goods__card__close">
             <button class="goods__card__close-button"  type="button">
-                <img src="/img/close__delete.png" alt="">
+                <img src="img/close__delete.png" alt="">
             </button>
         </div>
         <div class="goods__card__img">
@@ -180,4 +180,5 @@ function addToBasket(event) {
 
     console.log('Item in basket! New Basket:', existingBasket);
 }
+
 
