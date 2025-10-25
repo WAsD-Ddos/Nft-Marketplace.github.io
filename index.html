@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Marketplace__pet-project</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="files/style.css">
+</head>
+
+<body style="background-color: #131129;">
+
+
+	<div class="wrapper">
+		<section class="basket">
+              <div class="container">
+				    <div class="basket__cards goods__cards">
+
+							
+
+						
+
+			  </div>
+		</section>
+		<section class="sidebar">
+			<div class="sidebar__logo"><img id="sidebar_img-button" src="img/header__logo.png" alt=""></div>
+			<nav class="sidebar__nav">
+				<ul class="sidebar__list">
+					<li class="sidebar__list-item"><a href="#" class="sidebar__link"><img
+								src="img/sidebar_deashboard.png" alt=""></a></li>
+					<li class="sidebar__list-item"><a href="#" class="sidebar__link"><img src="img/sidebar_bid.png"
+								alt=""></a></li>
+					<li class="sidebar__list-item"><a href="#" class="sidebar__link"><img src="img/sidebar_favorite.png"
+								alt=""></a></li>
+					<li class="sidebar__list-item"><a href="#" class="sidebar__link"><img
+								src="img/sidebar_collection.png" alt=""></a></li>
+					<li class="sidebar__list-item"><a href="#" class="sidebar__link"><img src="img/sidebar_profile.png"
+								alt=""></a></li>
+					<li class="sidebar__list-item"><a href="#" class="sidebar__link"><img src="img/sidebar_settings.png"
+								alt=""></a></li>
+				</ul>
+			</nav>
+			<div class="sidebar__spacer"></div>
+			<div class="sidebar__logout"><img id="sidebar_img-logout" src="img/sidebar_logout.png" alt=""></div>
+		</section>
+
+
+		<section class="main">
+
+			<div class="container">
+
+				<header class="header">
+
+					<div class="header__items">
+						<button class="burger" type="button" aria-label="Open menu">
+							<img src="img/header__logo.png" alt="menu">
+						</button>
+
+						<form class="search">
+							<div class="search__field">
+								<button type="submit" class="search__button">
+									<img src="img/header_input-search.png" alt="Search" class="search__icon">
+								</button>
+								<input type="text" class="search__input" placeholder="Search Here">
+							</div>
+							<div class="search__hint hidenedHints">
+								<ul class="search__hint-list">
+									<li class="search__hint-item">Dog</li>
+								</ul>
+							</div>
+						</form>
+
+						<form class="tools">
+							<div class="tools__mode">
+								<button type="button" class="tools__mode-item">
+									<img src="/img/header_items_mode.png" alt="Search" class="search__icon">
+								</button>
+							</div>
+
+							<div class="tools__basket">
+								<button type="button" class="tools__basket-item">
+									<img src="/img/shopping-basket.png" alt="Search" class="search__icon">
+								</button>
+							</div>
+
+							<div class="tools__profile">
+								<button type="button" class="tools__profile-item">
+									<img src="/img/tools_profile.png" alt="Search" class="search__icon">
+								</button>
+							</div>
+
+
+						</form>
+
+					</div>
+
+				</header>
+
+				<section class="goods">
+
+
+					<div class="goods__items">
+						<div class="goods__statusrow">
+							<div class="goods__title">Trending Bids</div>
+							<div class="goods__button-group">
+								<button type="button" value="all" class="goods__button button__choosed">All</button>
+								<button type="button" value="art" class="goods__button">Art</button>
+								<button type="button" value="pixel" class="goods__button">Pixel</button>
+							</div>
+						</div>
+						<div class="goods__cards">
+
+							<div class="goods__card" name="dog" type_of="art">
+								<div class="goods__card__img">
+									<img src="/img/card__dog-nft.jpg" alt="">
+								</div>
+								<div class="goods__card__title">Dog King</div>
+								<div class="goods__card__info">
+									<div class="goods__card__actiontime">
+										<div class="goods__card__actiontime-text">Auction time</div>
+										<div class="goods__card__actiontime-item" action="false">3h 1m 50s</div>
+									</div>
+									<div class="goods__card__currentbid">
+										<div class="goods__card__currentbid-text">Current Bid</div>
+										<div class="goods__card__currentbid-item" current_price="false">0.15 ETH</div>
+									</div>
+								</div>
+								<div class="goods__card__button">
+									<button class="goods__card__button-item" key="dogart" type="button">add to
+										basket</button>
+								</div>
+
+							</div>
+
+							<div class="goods__card" name="parrot" type_of="pixel">
+								<div class="goods__card__img">
+									<img src="/img/card__parrot-nft.jpg" alt="">
+								</div>
+								<div class="goods__card__title">Red pixel parrot</div>
+								<div class="goods__card__info">
+									<div class="goods__card__actiontime">
+										<div class="goods__card__actiontime-text">Auction time</div>
+										<div class="goods__card__actiontime-item" action="false">3h 1m 50s</div>
+									</div>
+									<div class="goods__card__currentbid">
+										<div class="goods__card__currentbid-text">Current Bid</div>
+										<div class="goods__card__currentbid-item" current_price="false">0.15 ETH</div>
+									</div>
+								</div>
+								<div class="goods__card__button">
+									<a href="#"><button class="goods__card__button-item" type="button">add to
+											basket</button></a>
+								</div>
+							</div>
+
+							<div class="goods__card" name="cucumber" type_of="art">
+								<div class="goods__card__img">
+									<img src="/img/card__cucumber-nft.jpg" alt="">
+								</div>
+								<div class="goods__card__title">Fany cucumber</div>
+								<div class="goods__card__info">
+									<div class="goods__card__actiontime">
+										<div class="goods__card__actiontime-text">Auction time</div>
+										<div class="goods__card__actiontime-item" action="false">3h 1m 50s</div>
+									</div>
+									<div class="goods__card__currentbid">
+										<div class="goods__card__currentbid-text">Current Bid</div>
+										<div class="goods__card__currentbid-item" current_price="false">0.15 ETH</div>
+									</div>
+								</div>
+								<div class="goods__card__button">
+									<a href="#"><button class="goods__card__button-item" type="button">
+											add to basket</button></a>
+								</div>
+							</div>
+
+							<div class="goods__card" name="fish" type_of="pixel">
+								<div class="goods__card__img">
+									<img src="/img/card__fish-nft.jpg" alt="">
+								</div>
+								<div class="goods__card__title">Green-red fish</div>
+								<div class="goods__card__info">
+									<div class="goods__card__actiontime">
+										<div class="goods__card__actiontime-text">Auction time</div>
+										<div class="goods__card__actiontime-item" action="false">3h 1m 50s</div>
+									</div>
+									<div class="goods__card__currentbid">
+										<div class="goods__card__currentbid-text">Current Bid</div>
+										<div class="goods__card__currentbid-item" current_price="false">0.15 ETH</div>
+									</div>
+								</div>
+								<div class="goods__card__button">
+									<a href="#"><button class="goods__card__button-item" type="button">
+											add to basket</button></a>
+								</div>
+							</div>
+
+							<div class="goods__card" name="cat" type_of="pixel">
+								<div class="goods__card__img">
+									<img src="/img/card__cat-nft.jpg" alt="">
+								</div>
+								<div class="goods__card__title">Rainbow flying cat</div>
+								<div class="goods__card__info">
+									<div class="goods__card__actiontime">
+										<div class="goods__card__actiontime-text">Auction time</div>
+										<div class="goods__card__actiontime-item" action="false">3h 1m 50s</div>
+									</div>
+									<div class="goods__card__currentbid">
+										<div class="goods__card__currentbid-text">Current Bid</div>
+										<div class="goods__card__currentbid-item" current_price="false">0.15 ETH</div>
+									</div>
+								</div>
+								<div class="goods__card__button">
+									<a href="#"><button class="goods__card__button-item" type="button">
+											add to basket</button></a>
+								</div>
+							</div>
+
+							<div class="goods__card" name="banana" type_of="pixel">
+								<div class="goods__card__img">
+									<img src="/img/card__banana-nft.jpg" alt="">
+								</div>
+								<div class="goods__card__title">yellow pixel banana</div>
+								<div class="goods__card__info">
+									<div class="goods__card__actiontime">
+										<div class="goods__card__actiontime-text">Auction time</div>
+										<div class="goods__card__actiontime-item" action="false">3h 1m 50s</div>
+									</div>
+									<div class="goods__card__currentbid">
+										<div class="goods__card__currentbid-text">Current Bid</div>
+										<div class="goods__card__currentbid-item" current_price="false">0.15 ETH</div>
+									</div>
+								</div>
+								<div class="goods__card__button">
+									<a href="#"><button class="goods__card__button-item" type="button">
+											add to basket</button></a>
+								</div>
+							</div>
+
+							<div class="goods__card" name="apple" type_of="art">
+								<div class="goods__card__img">
+									<img src="/img/card__golden-apple-nft.jpg" alt="">
+								</div>
+								<div class="goods__card__title">golden yellow apple</div>
+								<div class="goods__card__info">
+									<div class="goods__card__actiontime">
+										<div class="goods__card__actiontime-text">Auction time</div>
+										<div class="goods__card__actiontime-item" action="false">3h 1m 50s</div>
+									</div>
+									<div class="goods__card__currentbid">
+										<div class="goods__card__currentbid-text">Current Bid</div>
+										<div class="goods__card__currentbid-item" current_price="false">0.15 ETH</div>
+									</div>
+								</div>
+								<div class="goods__card__button">
+									<a href="#"><button class="goods__card__button-item" type="button">
+											add to basket</button></a>
+								</div>
+							</div>
+
+
+							<div class="goods__card" name="apple" type_of="art">
+								<div class="goods__card__img">
+									<img src="/img/card__apple-nft-1.jpg" alt="">
+								</div>
+								<div class="goods__card__title">art red apple</div>
+								<div class="goods__card__info">
+									<div class="goods__card__actiontime">
+										<div class="goods__card__actiontime-text">Auction time</div>
+										<div class="goods__card__actiontime-item" action="false">3h 1m 50s</div>
+									</div>
+									<div class="goods__card__currentbid">
+										<div class="goods__card__currentbid-text">Current Bid</div>
+										<div class="goods__card__currentbid-item" current_price="false">0.15 ETH</div>
+									</div>
+								</div>
+								<div class="goods__card__button">
+									<a href="#"><button class="goods__card__button-item" type="button">
+											add to basket</button></a>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</section>
+
+
+
+			</div>
+
+	</div>
+
+
+
+
+
+	<script src="src/modules/variables.js"></script>
+	<script src="src/modules/search.js"></script>
+	<script src="src/modules/sidebar.js"></script>
+	<script src="src/modules/filter.js"></script>
+	<script src="src/modules/basket.js"></script>
+</body>
+
+</html>
